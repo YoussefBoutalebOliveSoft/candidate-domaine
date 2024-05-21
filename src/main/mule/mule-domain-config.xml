@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<domain:mule-domain
+        xmlns:vm="http://www.mulesoft.org/schema/mule/vm"
+        xmlns="http://www.mulesoft.org/schema/mule/core"
+        xmlns:domain="http://www.mulesoft.org/schema/mule/ee/domain"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xsi:schemaLocation="
+               http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+               http://www.mulesoft.org/schema/mule/ee/domain http://www.mulesoft.org/schema/mule/ee/domain/current/mule-domain-ee.xsd
+http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd">
+
+    <!-- configure here resource to be shared within the domain -->
+	<vm:config name="VM_Config_in_domaine" doc:name="VM Config" doc:id="1227e1a2-16a5-4514-a86a-724a754d5114" >
+		<vm:queues >
+			<vm:queue queueName="form1queue" queueType="PERSISTENT" />
+			<vm:queue queueName="form2queue" queueType="PERSISTENT" />
+			<vm:queue queueName="form3queue" />
+		</vm:queues>
+	</vm:config>
+
+
+</domain:mule-domain>
