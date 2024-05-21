@@ -12,9 +12,7 @@ http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/cu
     <!-- configure here resource to be shared within the domain -->
 	<vm:config name="VM_Config_in_domaine" doc:name="VM Config" doc:id="1227e1a2-16a5-4514-a86a-724a754d5114" >
 		<vm:queues >
-			<vm:queue queueName="form1queue" queueType="PERSISTENT" />
-			<vm:queue queueName="form2queue" queueType="PERSISTENT" />
-			<vm:queue queueName="form3queue" />
+			<vm:queue queueName="formqueue" queueType="PERSISTENT" />
 		</vm:queues>
 	</vm:config>
 
