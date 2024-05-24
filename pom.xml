@@ -16,7 +16,13 @@
 		<app.runtime>4.5.3</app.runtime>
 		<mule.maven.plugin.version>4.0.0</mule.maven.plugin.version>
 	</properties>
-
+<distributionManagement>
+<repository>
+<id>github</id>
+<name>GitHub Packages</name>
+<url>https://maven.pkg.github.com/YoussefBoutalebOliveSoft/candidate-domaine</url>
+</repository> 
+</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
